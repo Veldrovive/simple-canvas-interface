@@ -5,5 +5,9 @@
   "main": "canvasRequester.js",
   "repository": "https://github.com/Veldrovive/simple-canvas-interface.git",
   "author": "Aidan Dempster (aidan.dempster@gmail.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "parse-link-header": "^1.0.1"
+  }
 }
