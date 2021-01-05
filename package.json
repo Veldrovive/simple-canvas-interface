@@ -9,5 +9,12 @@
   "dependencies": {
     "axios": "^0.21.1",
     "parse-link-header": "^1.0.1"
-  }
+  },
+  "keywords": [
+    "canvas",
+    "api",
+    "instructure",
+    "lms",
+    "client"
+  ]
 }
