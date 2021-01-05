@@ -80,7 +80,7 @@ class Requester {
                         let body = res.data
                         const linkHeader = res.headers.link
                         const parsedLinks = parseLinks(linkHeader)
-                        if (parseLinks != null && 'next' in parsedLinks) {
+                        if (parsedLinks != null && 'next' in parsedLinks) {
                             const nextPageEndpoint = parsedLinks['next'].url
                             // We recursively call this same function for getting more pages until the base condition of there being no next page
                             const followingPagesContents = await this.spawnRequest(nextPageEndpoint)
