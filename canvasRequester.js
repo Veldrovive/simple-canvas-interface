@@ -6,7 +6,7 @@ class Requester {
     constructor (accessToken, subdomain = 'utoronto', params) {
         ({
             debounceTime: this.debounceTime = 200,
-            defaultPageLength: this.defaultPageLength = 10,
+            defaultPageLength: this.defaultPageLength = 100,
             debug: this.debug = false
         } = params)
         this.accessToken = accessToken
@@ -109,12 +109,11 @@ class Requester {
     }
 }
 
-function createCanvasInterface(accessToken, subdomain, debug=false) {
+function createCanvasInterface(accessToken, subdomain, params) {
     /**
      * Gets a function that pings the canvas api with the correct authorization and throttling.
      */
-    subdomain = subdomain
-    const requester = new Requester(accessToken, subdomain, { debug, defaultPageLength: 100 })
+    const requester = new Requester(accessToken, subdomain, params)
     return requester.spawnRequest.bind(requester)
 }
 
