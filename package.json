@@ -1,0 +1,9 @@
+{
+  "name": "simple-canvas-interface",
+  "version": "0.1.0",
+  "description": "A dead simple interface for calling to canvas apis. Only handles throttling and pages.",
+  "main": "canvasRequester.js",
+  "repository": "https://github.com/Veldrovive/simple-canvas-interface.git",
+  "author": "Aidan Dempster (aidan.dempster@gmail.com)",
+  "license": "MIT"
+}
